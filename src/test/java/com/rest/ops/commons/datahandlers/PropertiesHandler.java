@@ -11,7 +11,7 @@ public class PropertiesHandler {
 	public PropertiesHandler() {
 		
 		try {
-			props.load(new FileInputStream(".src/test/resources/application.properties"));
+			props.load(new FileInputStream("./src/test/resources/application.properties"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
