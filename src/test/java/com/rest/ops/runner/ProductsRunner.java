@@ -1,5 +1,7 @@
 package com.rest.ops.runner;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -9,4 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 		)
 public class ProductsRunner extends AbstractTestNGCucumberTests{
 
+	 @DataProvider(parallel = true)
+	    public Object[][] scenarios() {
+	        return super.scenarios();
+	    }
 }
