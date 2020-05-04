@@ -4,6 +4,7 @@
 
 		<classes>
 			<class name="com.rest.ops.runner.EmployeeRunner"></class>
+			<class name="com.rest.ops.runner.ProductRunner"></class>
 		</classes>
 	</test>
 </suite>
