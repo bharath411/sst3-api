@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions( features = "src/test/resources/features/employee/employee.feature" ,
 				 glue ="com.rest.ops",
+				 tags = "",
 				 plugin= {"pretty", "json:target/cucumber/employee.json","html:target/cucumber-report" }
 		)
 
